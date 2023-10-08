@@ -15,7 +15,7 @@ const allChars = lowerCase + upperCase + numbers + characters;
 
 // Write password to the #password input
 function writePassword(){
-  var password = generatePassword();
+  var generatedPassword = generatePassword();
   var passwordText = document.querySelector("#password");
 
   let password = "";
@@ -48,17 +48,11 @@ generateBtn.addEventListener("click", writePassword);
 var options = ["Yes", "No"];
 
 var generatePassword = function() {
-var userChoice = window.prompt("Does your password require at least 8 characters?");
+  console.log("fired generatePassword function")
+  var userChoice = window.prompt("Does your password require at least 8 characters?");
+
 
 }
-  if (!userChoice) {
-    return;
-  }
-
-  else if (
-    (userChoice === "Yes")
-  )
-
 
 // Clear the concole on every refresh
 console.clear();
