@@ -3,11 +3,12 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-const length = 8;
 const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const numbers = "123456789";
 const characters = "`~!@#$%^&*()-_=+{}[]/|<>/?";
+const length = 8;
+// parseInt(length <= 8 || length <=128);
 
 const allChars = lowerCase + upperCase + numbers + characters;
 
@@ -27,32 +28,50 @@ function writePassword(){
   while(length >= password.length){
   password += allChars[Math.floor(Math.random() * allChars.length)];
   }
+
   passwordText.value = password;
 }
-
-
-  // for (let i = 0; i <= length; i++) {
-  //   const randomIndex =
-  //   Math.floor(Math.random() * characters.length); password += characters.charAt(randomIndex);
-  // }
-  //   return password;
-
 
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-
 //Confirm buttons
 
-var options = ["Yes", "No"];
-
 var generatePassword = function() {
-  console.log("fired generatePassword function")
-  var userChoice = window.prompt("Does your password require at least 8 characters?");
+  console.log("fired generatePassword function");
+  confirm("Include at least 8 characters?");
+  confirm("Include lowercases?");
+  confirm("Include uppercases?");
+  confirm("Include numbers?");
+  confirm("Include special character?");
+ 
+  if (lowerCaseConfirm === True) {
+    passwordOptions += lowercaseLetters
+}
+  if (upperCaseConfirm === True) {
+  passwordOptions += upperCaseConfirm
+}
+  if (numbersConfirm === True) {
+  passwordOptions += numbersConfirm
+}
+  if (charactersConfirm === True) {
+  passwordOptions += charactersConfirm
+}
 
+return writePassword();
 
 }
+
+// return {
+//   lowerCase,
+//   upperCase,
+//   numbers,
+//   characters,
+//   length,
+
+// };
+
 
 // Clear the concole on every refresh
 console.clear();
