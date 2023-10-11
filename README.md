@@ -1,6 +1,6 @@
 # password-generator
 [Link to deployed application](https://mathilde-01.github.io/password-generator/)
-![Portfolio screenshot](./Assets/images/03-javascript-homework-demo.png)
+![Portfolio screenshot](/Assets/images/pw-generator-screenshot.png)
 
 ## Description  
 This application enables users to generate random passwords based on criterias that they'ved selected.
