@@ -1,5 +1,5 @@
 # password-generator
-[Link to deployed application]()
+[Link to deployed application](https://mathilde-01.github.io/password-generator/)
 ![Portfolio screenshot](./)
 
 ## Description  
@@ -35,3 +35,4 @@ THEN the password is either displayed in an alert or written to the page
 
 
 ## Credits  
+[Bootcampspot.com](https://bootcampspot.instructure.com/courses/4347/assignments/62266?module_item_id=1081248)
